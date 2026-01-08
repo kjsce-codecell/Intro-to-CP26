@@ -8,7 +8,7 @@ int main() {
     vector<int> v = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; 
     // 10 elements
 
-    vector<int>::iterator it = v.begin(); 
+    auto it = v.begin(); 
     //v.begin() returns an iterator pointing to the first element of the vector
     
     while (it != v.end()) { 
@@ -21,7 +21,8 @@ int main() {
         //it++ increments the iterator
     }
     cout<<"\n";
-    vector<int>::reverse_iterator rit = v.rbegin(); 
+
+    auto rit = v.rbegin(); 
     //v.rbegin() returns a reverse iterator pointing to the last element of the vector
 
     while (rit != v.rend()) { 
@@ -38,4 +39,3 @@ int main() {
 
 /* Output: 1 2 3 4 5 6 7 8 9 10 
            10 9 8 7 6 5 4 3 2 1       */
-//Challenge: Write a program that takes an input and prints the elements of a vector in reverse order

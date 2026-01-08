@@ -1,40 +1,57 @@
-// Vectors
-// Vectors are similar to arrays but unlike arrays, vectors can grow and shrink as needed. 
-// Which means you don’t have to define their size when initializing.
+// Vector in C++
+// Demonstrates common vector functions
 
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    vector<int> v1 = {1,2,3,4,5,6}; 
-    // Initalizing a vector with all elements defined
+int main() {
+    vector<int> v;   // declare vector
 
-    vector<int> v2; 
-    // Initializing an empty vector
+    vector <int> v2(5); // vector of size 5 
 
-    vector<int> v3(5); 
-    // Initializing a vector of size 5 with all elements being 0
+    vector <int> v3(5, 0);
 
-    vector<int> v4(7,4); 
-    // Initializing a vector of size 7 with all elements being 4
-    
-    for (int i = 0; i < v1.size(); ++i) 
-    // Looping through the vector using a for loop
-    {
-        cout << v1[i] << ' '; 
-        // Printing the elements of the vector
+
+    // push_back() → add elements at end
+    v.push_back(10);
+    v.push_back(20);
+    v.push_back(30);
+
+    // size() → current size
+    cout << "Size: " << v.size() << "\n";
+
+    // back() → last element
+    cout << "Last element: " << v.back() << "\n";
+
+    // insert() → insert at position
+    // insert 15 at index 1
+    v.insert(v.begin() + 1, 15);
+
+    // erase() → remove element at position
+    // remove element at index 2
+    v.erase(v.begin() + 2);
+
+    // pop_back() → remove last element
+    v.pop_back();
+
+    // empty() → check if vector is empty
+    if (v.empty()) {
+        cout << "Vector is empty\n";
+    } else {
+        cout << "Vector is not empty\n";
     }
 
-    v[1] = 0;  // updated the value of vector at index 1 from '2' to '0'
- 
+    // print vector
+    cout << "Vector elements: ";
+    for (int i = 0; i < v.size(); i++) {
+        cout << v[i] << " ";
+    }
+    cout << "\n";
+
+    // clear() → remove all elements
+    v.clear();
+
+    cout << "Size after clear: " << v.size() << "\n";
+
+    return 0;
 }
-
-/* Output: 1
-           2
-           3
-           4
-           5         */
-
-// Challenge: Take an input of 8 integers and store them in a vector, 
-// iterate through the vector and print all the even integers.

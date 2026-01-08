@@ -8,10 +8,6 @@ int main() {
     
     cout << "The length of the string is: " << l << endl;
     
-    //Test: What will the code output for the string "Competitive"?
-    
-    //Functions in String, consider the string H3LLo!
-
     s = "H3LLo"; //re-initialize the string S
     
     bool IsEmpty = s.empty(); //answer: false
@@ -28,8 +24,6 @@ int main() {
     string s1 = "My CP skills are ";
     string s2 = "amazing!";
     
-    s1.append(s2);
-    cout << s1 << endl; //prints My CP skills are amazing!
     
     string newstring = "Codecell";
     cout << newstring.substr(0, 4) << endl;
@@ -39,13 +33,6 @@ int main() {
     cout << newstring.find("Cell") << endl; 
     //Guess the output
     
-    isalnum('a'); //returns true
-    isalnum('2'); //true
-    isalnum('!'); //false
-    
-    isalpha('s'); 
-    
-    isdigit('2');
     
     
     return 0;

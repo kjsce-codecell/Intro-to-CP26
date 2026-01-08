@@ -25,30 +25,9 @@ int main()
         cout << v1[i] << ' '; 
         // Printing the elements of the vector
     }
-    cout << "\n";
-    for (int i = 0; i < v2.size(); ++i) 
-    // Looping through the vector using a for loop
-    {
-        cout << v2[i] << ' '; 
-        // Printing the elements of the vector
-    }
-    cout << "\n";
-    for (int i = 0; i < v3.size(); ++i) 
-    // Looping through the vector using a for loop
-    {
-        cout << v3[i] << ' '; 
-        // Printing the elements of the vector
-    }
-    cout << "\n";
-    for (int i = 0; i < v4.size(); ++i) 
-    // Looping through the vector using a for loop
-    {
-        cout << v4[i] << ' '; 
-        // Printing the elements of the vector
-    }
-    cout << "\n";
 
-    return 0;
+    v[1] = 0;  // updated the value of vector at index 1 from '2' to '0'
+ 
 }
 
 /* Output: 1

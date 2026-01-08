@@ -34,7 +34,3 @@ int main(){
           a
           1
           Hello World                 */
-/* Challenge: Write a program that prints your name, Age, 
-and your Credit Card Number on the same line (and do share it with us ;) */
-
-// Extra Credit: Write a program that prints the size of various data types in bytes.

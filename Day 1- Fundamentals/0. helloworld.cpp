@@ -9,4 +9,3 @@ int main()
     return 0;
 }
 /*Output: Hello, World!         */
-//Challenge: Can you write a program that prints your name?

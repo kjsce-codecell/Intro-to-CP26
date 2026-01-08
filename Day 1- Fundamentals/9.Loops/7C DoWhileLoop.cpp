@@ -1,8 +1,8 @@
 //3. DO-WHILE LOOP:
 
-
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+
 int main() {
     int x = 6; 
     // Initialize a variable with a value greater than the condition.
@@ -26,5 +26,3 @@ int main() {
 // The loop runs once because the check happens at the end, 
 // demonstrating how a do-while loop behaves.
 
-/*Challenge: Write a program to input 5 integers from the user, 
-store them in a vector, and then print the square of each number using a loop.*/

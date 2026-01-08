@@ -21,4 +21,3 @@ int main() {
      //        Iteration 4
      //        Iteration 5
 }
-//Challenge: Write a program that prints the numbers from 1 to 10 using a for loop

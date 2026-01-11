@@ -13,7 +13,7 @@ int main() {
 
     auto it = m.find(2);
     if (it != m.end()) {
-        cout << "Found key 2 with value: " << it->second << "\n";
+        cout << "Found key 2 with value: " << (*it).second << "\n";
     }
 
     // count(key) - check if key exists (0 or 1 in map)
@@ -40,17 +40,3 @@ int main() {
 
     return 0;
 }
-/* Output:
-
-Size: 3
-Found key 2 with value: two
-Key 3 exists: 1
-Key 5 exists: 0
-Map elements:
-2 two
-3 three
-Is map empty? 0
-Size after clear: 0
-Is map empty now? 1
-
-*/

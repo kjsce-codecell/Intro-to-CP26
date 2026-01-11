@@ -4,26 +4,27 @@ using namespace std;
 int main() {
     string s = "KJSSE";
     
-    int l = s.length(); //function to calculate the length of the string
+    int l = s.length();         //function to calculate the length of the string
     
     cout << "The length of the string is: " << l << endl;
     
-    s = "H3LLo"; //re-initialize the string S
+    s = "H3LLo";                //re-initialize the string S
     
-    bool IsEmpty = s.empty(); //answer: false
+    bool IsEmpty = s.empty();  
+    cout<<IsEmpty<<endl; 
     
-    s.push_back('?'); //adds a ? to the end
+    s.push_back('?');           //adds a ? to the end
     
     cout << s << endl;
     
-    s.pop_back(); //removes the last character.
+    s.pop_back();               //removes the last character.
     
     cout << s << endl;
     
     //Join two string together
     string s1 = "My CP skills are ";
     string s2 = "amazing!";
-    
+    cout<< (s1 + s2) <<endl;
     
     string newstring = "Codecell";
     cout << newstring.substr(0, 4) << endl;

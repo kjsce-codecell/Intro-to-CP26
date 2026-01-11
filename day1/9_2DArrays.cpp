@@ -1,11 +1,10 @@
 // 2D Arrays in C++
-// 2D arrays are used to store values in rows and columns (matrix form)
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int arr[3][3]; // Declaring a 2D array with 3 rows and 3 columns
+    int arr[3][3]; 
 
     // Taking input for the 2D array
     for (int i = 0; i < 3; i++) {

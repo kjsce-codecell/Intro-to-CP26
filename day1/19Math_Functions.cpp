@@ -1,12 +1,4 @@
 // Math Functions in C++
-
-// ### Overview
-// The C++ standard library provides a wide range of mathematical functions that can be used to perform various mathematical
-// operations. These functions are part of the `<cmath>` header file and can be used to perform tasks such as calculating
-// square roots, logarithms, trigonometric functions, and more.
-
-// ### Example of ceil(), floor(), sqrt(), abs(), pow()
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -22,11 +14,4 @@ int main() {
     return 0;
 }
 
-/*Output: 4
-          3
-          2.64575
-          5
-          49  
-          2
-          7         */
-//Challenge: Write a program that prints the square root of a number.
+//Challenge: Write a program that prints the cube root of a number.

@@ -3,9 +3,10 @@ using namespace std;
 
 int main() {
     vector<int> v = {5, 1, 4, 2, 3, 2};
+    int i;
 
     cout << "Initial vector: ";
-    for (int i = 0; i < v.size(); i++) {
+    for ( i = 0; i < v.size(); i++) {
         cout << v[i] << " ";
     }
     cout << "\n";
@@ -13,7 +14,7 @@ int main() {
     // sort ascending
     sort(v.begin(), v.end());
     cout << "After sort ascending: ";
-    for (int i = 0; i < v.size(); i++) {
+    for (i = 0; i < v.size(); i++) {
         cout << v[i] << " ";
     }
     cout << "\n";
@@ -21,7 +22,7 @@ int main() {
     // sort descending
     sort(v.rbegin(), v.rend());
     cout << "After sort descending: ";
-    for (int i = 0; i < v.size(); i++) {
+    for (i = 0; i < v.size(); i++) {
         cout << v[i] << " ";
     }
     cout << "\n";
@@ -29,7 +30,7 @@ int main() {
     // reverse vector
     reverse(v.begin(), v.end());
     cout << "After reverse: ";
-    for (int i = 0; i < v.size(); i++) {
+    for (i = 0; i < v.size(); i++) {
         cout << v[i] << " ";
     }
     cout << "\n";
@@ -45,7 +46,7 @@ int main() {
     // binary search requires sorted vector
     sort(v.begin(), v.end());
     cout << "After re-sorting for binary search: ";
-    for (int i = 0; i < v.size(); i++) {
+    for (i = 0; i < v.size(); i++) {
         cout << v[i] << " ";
     }
     cout << "\n";
@@ -54,12 +55,12 @@ int main() {
          << binary_search(v.begin(), v.end(), 3) << "\n";
 
     // lower bound
-    auto lb = lower_bound(v.begin(), v.end(), 3);
-    cout << "Lower bound of 3: " << *lb << "\n";
+    int lb = *lower_bound(v.begin(), v.end(), 3);
+    cout << "Lower bound of 3: " << lb << "\n";
 
     // upper bound
-    auto ub = upper_bound(v.begin(), v.end(), 3);
-    cout << "Upper bound of 3: " << *ub << "\n";
+    int ub = *upper_bound(v.begin(), v.end(), 3);
+    cout << "Upper bound of 3: " << ub << "\n";
 
     // count frequency
     cout << "Count of 2: "

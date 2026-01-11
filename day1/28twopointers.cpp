@@ -17,3 +17,7 @@ bool hasPairWithSum(const std::vector<int>& arr, int target) {
     }
     return false;
 }
+
+int main(){
+    
+}

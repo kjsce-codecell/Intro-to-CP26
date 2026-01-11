@@ -3,7 +3,7 @@ using namespace std;
 
 int maxSum(vector<int>& arr, int k){
     int n = arr.size();
-   
+    
     int max_sum = 0;
     for (int i = 0; i < k; i++){
         max_sum += arr[i]; // Compute sum of first window of size k

@@ -25,12 +25,6 @@ int main(){
       cout << var5;
 
       return 0;
-      // Point to Remember: Use "\n" for new line. You can also use "\n" for new line.
+      
 }
 
-/*Output: 10
-          10.5
-          1.02344e+09
-          a
-          1
-          Hello World                 */

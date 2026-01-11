@@ -5,10 +5,10 @@ int main() {
     int a = 10;
     int &ref = a;   // ref is a reference to a
 
-    cout << a << "\n";    // 10
-    cout << ref << "\n";  // 10
+    cout << a << "\n";    
+    cout << ref << "\n";  
 
-    ref = 20;             // changes a
+    ref = 20;             
 
-    cout << a << "\n";    // 20
+    cout << a << "\n";    
 }

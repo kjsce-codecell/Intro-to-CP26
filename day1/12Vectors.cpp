@@ -1,13 +1,12 @@
 // Vector in C++
-// Demonstrates common vector functions
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    vector<int> v;   // declare vector
+    vector<int> v;              // declare vector
 
-    vector <int> v2(5); // vector of size 5 
+    vector <int> v2(5);         // vector of size 5 
 
     vector <int> v3(5, 0);
 
@@ -17,24 +16,22 @@ int main() {
     v.push_back(20);
     v.push_back(30);
 
-    // size() → current size
+    // size() - current size
     cout << "Size: " << v.size() << "\n";
 
-    // back() → last element
+    // back() - last element
     cout << "Last element: " << v.back() << "\n";
 
-    // insert() → insert at position
     // insert 15 at index 1
     v.insert(v.begin() + 1, 15);
 
-    // erase() → remove element at position
     // remove element at index 2
     v.erase(v.begin() + 2);
 
-    // pop_back() → remove last element
+    // pop_back() - remove last element
     v.pop_back();
 
-    // empty() → check if vector is empty
+    // empty() - check if vector is empty
     if (v.empty()) {
         cout << "Vector is empty\n";
     } else {

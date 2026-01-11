@@ -19,10 +19,6 @@ int main(){
     
     return 0;
 }
-
-/*Output: Number: 42
-          Decimal: 3.14
-          Text: Hello                       */
 // Challenge: Write a C++ program that uses auto to declare variables of different types (int, float, string)
 
 // Extra Credit: Write a program that uses auto to initialize a vector<int> with values {5, 10, 15}.

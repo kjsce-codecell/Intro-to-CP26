@@ -30,6 +30,17 @@ vector<int> sieve(int n) {
     return res;
 }
 
+int main(){
+    int n;
+    cin>>n;
+
+    vector<int> v = sieve(n);
+    
+    for(int i=0;i<v.size();i++){
+        cout<<v[i]<<"\n";
+    }
+
+}
 // Naive Method
 
 /*

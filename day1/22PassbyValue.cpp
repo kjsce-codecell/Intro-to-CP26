@@ -5,19 +5,17 @@ using namespace std;
 
 void changeValue(int x) {
    x = 20; 
-   // Change inside function
-
    cout << "Inside function: x = " << x << endl;
 }
 
 int main() {
-   int x = 10;
-   cout << "Before function: x = " << x << endl;
+   int a = 10;
+   cout << "Before function: x = " << a << endl;
 
-   changeValue(x);
+   changeValue(a);
    // Called the function
 
-   cout << "After function: x = " << x << endl;
+   cout << "After function: x = " << a << endl;
 
    return 0;
 }

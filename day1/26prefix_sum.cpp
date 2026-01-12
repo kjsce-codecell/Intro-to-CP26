@@ -17,7 +17,7 @@ int main() {
     for (int x : prefixSum) {
         cout << x << " ";
     }
-    // Output: 3 4 8 9 14 23 
+
 
     return 0;
 }

@@ -70,17 +70,3 @@ int main() {
 }
 
 
-/*
-Initial vector: 5 1 4 2 3 2
-After sort ascending: 1 2 2 3 4 5
-After sort descending: 5 4 3 2 2 1
-After reverse: 1 2 2 3 4 5
-Max element: 5
-Min element: 1
-After re-sorting for binary search: 1 2 2 3 4 5
-Binary search for 3: 1
-Lower bound of 3: 3
-Upper bound of 3: 4
-Count of 2: 2
-
-*/

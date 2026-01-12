@@ -15,5 +15,3 @@ int main() {
 	return 0;
 }
 
-// /*Challenge: Write a program in C++ to demonstrate a function that swaps the values of two integers. 
-

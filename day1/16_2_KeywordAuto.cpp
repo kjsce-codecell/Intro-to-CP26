@@ -19,6 +19,3 @@ int main(){
     
     return 0;
 }
-// Challenge: Write a C++ program that uses auto to declare variables of different types (int, float, string)
-
-// Extra Credit: Write a program that uses auto to initialize a vector<int> with values {5, 10, 15}.

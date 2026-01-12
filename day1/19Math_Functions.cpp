@@ -14,4 +14,3 @@ int main() {
     return 0;
 }
 
-//Challenge: Write a program that prints the cube root of a number.

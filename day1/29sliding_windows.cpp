@@ -1,27 +1,39 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int maxSum(vector<int>& arr, int k){
-    int n = arr.size();
+int maxSum(vector<int>& arr, int k) {
     
-    int max_sum = 0;
-    for (int i = 0; i < k; i++){
-        max_sum += arr[i]; // Compute sum of first window of size k
+    int n = arr.size();
+
+
+    // Sum of first window
+    int window_sum = 0;
+    for (int i = 0; i < k; i++) {
+        window_sum += arr[i];
     }
 
-   
-    int window_sum = max_sum; 
+    int max_sum = window_sum;
+
+    // Slide the window
     for (int i = k; i < n; i++) {
-        window_sum += arr[i] - arr[i - k];  //remove element of previous window and adding new element to current window.
-        max_sum = max(max_sum, window_sum); 
+        window_sum += arr[i] - arr[i - k];  // add next, remove previous
+        max_sum = max(max_sum, window_sum);
     }
 
     return max_sum;
 }
 
-int main(){
-    vector<int> arr = {5, 2, -1, 0, 3};
-    int k = 3;
-    cout << maxSum(arr, k);
+int main() {
+               
+    vector<int> arr = {2, 1, 5, 1, 3, 2};
+
+    int k;
+    cin >> k;    //size of window             
+
+    int result = maxSum(arr, k);
+
+    
+    cout << result;
+
     return 0;
 }

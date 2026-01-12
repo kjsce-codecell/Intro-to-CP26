@@ -1,23 +1,36 @@
-#include <bits/stdc++.h>
+//check if there exists a pair with given sum in an array
 
-bool hasPairWithSum(const std::vector<int>& arr, int target) {
+#include <bits/stdc++.h>
+using namespace std;
+
+bool hasPairWithSum(vector<int> arr, int target) {
+
+    sort(arr.begin(), arr.end());   
+
     int left = 0;
     int right = arr.size() - 1;
 
     while (left < right) {
-        int currentSum = arr[left] + arr[right];
-
-        if (currentSum == target) {
-            return true; // Found the pair!
-        } else if (currentSum < target) {
-            left++; // Need a larger sum
-        } else {
-            right--; // Need a smaller sum
-        }
+        int sum = arr[left] + arr[right];
+        if (sum == target) return true;
+        else if (sum < target) left++;
+        else right--;
     }
     return false;
 }
 
 int main(){
+
+             
+
+    vector<int> arr = {10, 15, 3, 7};
+  
+    int target;
+    cin >> target;         
+
+    if (hasPairWithSum(arr, target))
+        cout << "YES\n";
+    else
+        cout << "NO\n";
     
 }

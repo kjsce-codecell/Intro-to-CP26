@@ -22,12 +22,15 @@ int main() {
 
     // erase() - remove element by key
     m.erase(1);
+    cout << "Size after erasing key 1: " << m.size() << "\n";
+    cout << '\n';
 
     // traverse map (keys are sorted automatically)
     cout << "Map elements:\n";
     for (auto p : m) {
         cout << p.first << " " << p.second << "\n";
     }
+    cout << '\n';
 
     // empty() - check if map is empty
     cout << "Is map empty? " << m.empty() << "\n";
@@ -37,6 +40,6 @@ int main() {
 
     cout << "Size after clear: " << m.size() << "\n";
     cout << "Is map empty now? " << m.empty() << "\n";
-
+    cout << '\n';
     return 0;
 }

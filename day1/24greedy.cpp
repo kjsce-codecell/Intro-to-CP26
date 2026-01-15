@@ -6,6 +6,8 @@
 using namespace std;
 
 int main() {
+
+    cout << "Enter the value : ";
     int n;
     cin >> n; 
 
@@ -17,5 +19,5 @@ int main() {
         n %= coins[i]; // no of coins you need
     }
 
-    cout << cnt << "\n";
+    cout << "Minimum number of coins needed: "  << cnt << "\n";
 }

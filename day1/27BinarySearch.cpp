@@ -2,15 +2,19 @@
 using namespace std;
 
 int main() {
+
+    cout << "Enter number of elements :\n";
     int n;
     cin >> n;                 // number of elements
 
+    cout << "Enter the elements:\n";
     vector<int> a(n);
     for (int i = 0; i < n; i++) {
         cin >> a[i];          // input sorted array elements
     }
 
     int x;
+    cout << "Enter the element to search: ";
     cin >> x;                 // element to search
 
     int l = 0;                // left index
@@ -37,6 +41,7 @@ int main() {
         }
     }
 
+    cout << "Search result: ";
     // output result
     if (found)
         cout << "Found\n";

@@ -21,13 +21,12 @@ bool hasPairWithSum(vector<int> arr, int target) {
 
 int main(){
 
-             
-
     vector<int> arr = {10, 15, 3, 7};
-    
-  
+    cout << "Enter the target sum: ";
     int target;
-    cin >> target;         
+    cin >> target;   
+    
+    cout << "Result: ";
 
     if (hasPairWithSum(arr, target))
         cout << "YES\n";

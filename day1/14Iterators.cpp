@@ -9,6 +9,8 @@ int main() {
     // 10 elements
 
     auto it = v.begin(); 
+
+    cout<<"Forward Iteration:\n";
     
     while (it != v.end()) { 
         cout << *it << " "; 
@@ -18,6 +20,8 @@ int main() {
     cout<<"\n";
 
     auto rit = v.rbegin(); 
+
+    cout<<"Reverse Iteration:\n";
 
     while (rit != v.rend()) { 
         cout << *rit << " "; 

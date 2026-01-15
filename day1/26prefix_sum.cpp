@@ -14,9 +14,11 @@ int main() {
     }
 
     // Output the result
+    cout << "Prefix Sum Array: ";
     for (int x : prefixSum) {
         cout << x << " ";
     }
+    cout << "\n";
 
 
     return 0;

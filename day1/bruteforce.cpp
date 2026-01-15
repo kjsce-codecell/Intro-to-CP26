@@ -9,6 +9,7 @@ int main() {
     int target = 9;
     int a[] = {2, 4, 7, 1, 5};
 
+
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
             if (a[i] + a[j] == target) {

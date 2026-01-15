@@ -11,12 +11,12 @@ void changeValue(int &x) {
 
 int main() {
     int a = 10;
-    cout << "Before function: x = " << a << endl;
+    cout << "Before function: a = " << a << endl;
 
     changeValue(a);
     // Called the function
 
-    cout << "After function: x = " << a << endl;
+    cout << "After function: a = " << a << endl;
 
     return 0;
 }

@@ -27,13 +27,13 @@ int main() {
                
     vector<int> arr = {2, 1, 5, 1, 3, 2};
 
+    cout << "Enter the size of the sliding window: ";
     int k;
     cin >> k;    //size of window             
 
     int result = maxSum(arr, k);
-
-    
-    cout << result;
+  
+    cout << "Maximum sum of a sliding window of size " << k << " is: " << result << "\n";
 
     return 0;
 }

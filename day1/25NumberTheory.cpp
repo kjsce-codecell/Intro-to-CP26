@@ -31,16 +31,19 @@ vector<int> sieve(int n) {
 }
 
 int main(){
+    cout << "Enter the value of n to find all primes up to n: ";
     int n;
     cin>>n;
 
     vector<int> v = sieve(n);
     
     for(int i=0;i<v.size();i++){
-        cout<<v[i]<<"\n";
+        cout << "Prime number: " << v[i] << "\n";
     }
 
 }
+
+
 // Naive Method
 
 /*

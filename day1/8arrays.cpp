@@ -10,12 +10,14 @@ int main() {
          cin >> arr[i]; // Taking input for each element of the array
     }
 
+    cout << "Element at index 2: " << arr[2] << "\n";
+
     int sum = 0;
     for (int i = 0; i < 5; i++) {
         sum += arr[i];
     }
 
-    cout << "Sum: " << sum << "\n"; 
+    cout << "Sum: " << sum << "\n"; // Output: Sum of all elements
 
     return 0;
 }

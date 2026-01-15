@@ -10,7 +10,9 @@ int main() {
 
     vector <int> v2(5);         // vector of size 5 
 
-    vector <int> v3(5,0);    // vector of size 5 initialized with 0
+    vector <int> v3(5,0); 
+    
+    // vector of size 5 initialized with 0
 
 
     // push_back() → add elements at end

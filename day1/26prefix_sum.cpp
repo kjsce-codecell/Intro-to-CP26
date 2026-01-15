@@ -2,16 +2,21 @@
 using namespace std;
 
 int main() {
+
     vector<int> arr = {3, 1, 4, 1, 5, 9};
     int n = arr.size();
 
     // Create a prefix sum array of the same size
+    
     vector<int> prefixSum(n);
 
     prefixSum[0] = arr[0];
     for (int i = 1; i < n; i++) {
+
         prefixSum[i] = prefixSum[i - 1] + arr[i];
+
     }
+
 
     // Output the result
     cout << "Prefix Sum Array: ";

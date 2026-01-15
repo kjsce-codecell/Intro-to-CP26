@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    int a = 1, b = 0;
+    int a = 10, b = 20;
 
-    cout << (a && b) << "\n";  // logical AND
-    cout << (a || b) << "\n";  // logical OR
-    cout << (!a)     << "\n";  // logical NOT
+    cout << ((a<20) && (b<20)) << "\n";  // logical AND
+    cout << ((a<20) || (b<20)) << "\n";  // logical OR
+    cout << (!(a<20))     << "\n";  // logical NOT
 }

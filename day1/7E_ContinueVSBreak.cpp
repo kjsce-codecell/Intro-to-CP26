@@ -10,7 +10,7 @@ int main() {
 
         if(i==4) break; // Stop the loop if i is 4
 
-        cout << i << " "; 
+        cout << i << " ";
        
     }
     return 0;

@@ -6,9 +6,11 @@ using namespace std;
 int main() {
     vector<int> v;              // declare vector
 
+    vector <int> v1 = {1, 2, 3, 4, 5};             // another way to declare vector
+
     vector <int> v2(5);         // vector of size 5 
 
-    vector <int> v3(5, 0);
+    vector <int> v3(5,0);    // vector of size 5 initialized with 0
 
 
     // push_back() → add elements at end
@@ -24,12 +26,15 @@ int main() {
 
     // insert 15 at index 1
     v.insert(v.begin() + 1, 15);
+    cout << "Element at index 1: " << v[1] << "\n";
 
     // remove element at index 2
     v.erase(v.begin() + 2);
+    cout << "Element at index 2 after erase: " << v[2] << "\n";
 
     // pop_back() - remove last element
     v.pop_back();
+    cout << "Last element after pop_back: " << v.back() << "\n";
 
     // empty() - check if vector is empty
     if (v.empty()) {
@@ -47,7 +52,6 @@ int main() {
 
     // clear() → remove all elements
     v.clear();
-
     cout << "Size after clear: " << v.size() << "\n";
 
     return 0;

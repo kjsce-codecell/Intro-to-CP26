@@ -4,7 +4,10 @@ using namespace std;
 int main() {
     string s = "KJSSE";
     
-    int l = s.length();         //function to calculate the length of the string
+    int l = s.length();
+    
+    char s[0]; 
+    /function to calculate the length of the string
     
     cout << "The length of the string is: " << l << endl;
     
@@ -31,7 +34,7 @@ int main() {
     //Guess what this prints?
     
     cout << newstring.find("cell") << endl;
-    cout << newstring.find("Cell") << endl; 
+    cout << newstring.find("Cell") << endl; //returns string npos if not found
     //Guess the output
     
     

@@ -12,10 +12,15 @@ int main()
     cout << "a / b :" << (a / (float)b) << "\n"; //type conversion
     cout << "a % b :" << (a % b) << "\n";
 
+    cout << "Initial a = " << a << "\n";
     cout << "a++ :" << (a++) << "\n";
+    cout << "Updated a = " << a << "\n";
     cout << "a-- :" << (a--) << "\n";
+    cout << "Updated a = " << a << "\n";
     cout << "++a :" << (++a) << "\n";
+    cout << "Updated a = " << a << "\n";
     cout << "--a :" << (--a) << "\n";
+    cout << "Updated a = " << a << "\n";
 
     return 0;
 }

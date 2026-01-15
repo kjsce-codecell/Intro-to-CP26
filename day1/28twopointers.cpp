@@ -24,6 +24,7 @@ int main(){
              
 
     vector<int> arr = {10, 15, 3, 7};
+    
   
     int target;
     cin >> target;         

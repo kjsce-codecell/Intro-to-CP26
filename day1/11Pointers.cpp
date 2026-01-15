@@ -8,9 +8,9 @@ int main()
 
     int *pNum = &num; 
 
-    cout << pNum << "\n"; 
+    cout << "Address of num: " << pNum << "\n"; 
 
-    cout << *pNum << "\n"; 
+    cout << "Value at address: " << *pNum << "\n"; 
 
     return 0;
 }

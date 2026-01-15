@@ -40,7 +40,7 @@ int main() {
     // output result
     if (found)
         cout << "Found\n";
-    else
+    else 
         cout << "Not Found\n";
 
     return 0;

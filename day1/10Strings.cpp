@@ -6,10 +6,12 @@ int main() {
     
     int l = s.length();
     
-    char s[0]; 
-    /function to calculate the length of the string
+    //function to calculate the length of the string
     
     cout << "The length of the string is: " << l << endl;
+
+    char ch = s[2]; 
+    cout << "Character at index 2 is: " << ch << endl;
     
     s = "H3LLo";                //re-initialize the string S
     
@@ -27,15 +29,14 @@ int main() {
     //Join two string together
     string s1 = "My CP skills are ";
     string s2 = "amazing!";
-    cout<< (s1 + s2) <<endl;
+    cout << (s1 + s2) <<endl;
     
     string newstring = "Codecell";
     cout << newstring.substr(0, 4) << endl;
-    //Guess what this prints?
-    
+   
     cout << newstring.find("cell") << endl;
     cout << newstring.find("Cell") << endl; //returns string npos if not found
-    //Guess the output
+    
     
     
     

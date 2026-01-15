@@ -7,6 +7,7 @@ int main() {
     int arr[3][3]; 
 
     // Taking input for the 2D array
+    cout << "Enter elements of the 2D array:\n";
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             cin >> arr[i][j];

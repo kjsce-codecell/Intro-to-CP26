@@ -5,6 +5,11 @@ using namespace std;
 
 int main() {
     int a = 10;
+
+    // if
+    if(a == 10) {
+        cout << "a is 10" << "\n";      
+    }
     
     //if-else
     if (a >= 0) {

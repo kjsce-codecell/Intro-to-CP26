@@ -5,7 +5,6 @@ using namespace std;
 
 void changeValue(int &x) { 
     x = 20; 
-    
     cout << "Inside function: x = " << x << endl;
 }
 

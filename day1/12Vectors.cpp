@@ -10,12 +10,12 @@ int main() {
 
     vector <int> v2(5);         // vector of size 5 
 
-    vector <int> v3(5,0); 
+    vector <int> v3(5,1); 
     
     // vector of size 5 initialized with 0
 
 
-    // push_back() → add elements at end
+    // push_back() - add elements at end
     v.push_back(10);
     v.push_back(20);
     v.push_back(30);
@@ -52,7 +52,7 @@ int main() {
     }
     cout << "\n";
 
-    // clear() → remove all elements
+    // clear() - remove all elements
     v.clear();
     cout << "Size after clear: " << v.size() << "\n";
 

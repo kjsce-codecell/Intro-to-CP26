@@ -1,36 +1,48 @@
-//check if there exists a pair with given sum in an array
-
 #include <bits/stdc++.h>
 using namespace std;
 
-bool hasPairWithSum(vector<int> arr, int target) {
+int maxSum(vector<int>& arr, int k) {
 
-    sort(arr.begin(), arr.end());   
+    int n = arr.size(); 
+    auto l = arr.begin();
 
-    int left = 0;
-    int right = arr.size() - 1;
-
-    while (left < right) {
-        int sum = arr[left] + arr[right];
-        if (sum == target) return true;
-        else if (sum < target) left++;
-        else right--;
+    // sum of first window
+    int window_sum = 0;
+    for (auto temp = l; temp != l + k; temp++) {
+        window_sum += *temp;
     }
-    return false;
+    cout << "Window Sum :" << window_sum << "\n";
+
+    int max_sum = window_sum;
+
+    auto r = l + k;
+
+
+    while (r != arr.end()) {
+        window_sum += *r;   // add new element
+        window_sum -= *l;    
+        cout << "Window Sum :" << window_sum << "\n";   
+
+        max_sum = max(max_sum, window_sum);
+
+        ++l;        // move window forward
+        ++r;  
+    }
+    
+    return max_sum;
 }
 
-int main(){
+int main() {
 
-    vector<int> arr = {10, 15, 3, 7};
-    cout << "Enter the target sum: ";
-    int target;
-    cin >> target;   
-    
-    cout << "Result: ";
+    vector<int> arr = {2, 1, 5, 1, 3, 2};
 
-    if (hasPairWithSum(arr, target))
-        cout << "YES\n";
-    else
-        cout << "NO\n";
-    
+    cout << "Enter the size of the sliding window: ";
+    int k;
+    cin >> k;
+
+    int result = maxSum(arr, k);
+
+    cout << "Maximum sum of a sliding window of size " << k << " is: " << result << "\n";
+
+    return 0;
 }

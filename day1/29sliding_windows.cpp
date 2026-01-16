@@ -10,6 +10,7 @@ int maxSum(vector<int>& arr, int k) {
     int window_sum = 0;
     for (int i = 0; i < k; i++) {
         window_sum += arr[i];
+        cout<<"sum of window "<<i<<": "<<window_sum<<"\n";
     }
 
     int max_sum = window_sum;

@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     vector<int> v;              // declare vector
 
-    vector <int> v1 = {1, 2, 3, 4, 5};             // another way to declare vector
+    vector <int> v1 = {1, 2, 3, 4, 5};             // initialise vector
 
     vector <int> v2(5);         // vector of size 5 
 

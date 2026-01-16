@@ -22,6 +22,7 @@ int main() {
     bool found = false;       // flag to check if element exists
 
     // binary search loop
+    int index;
     while (l <= r) {
         // calculate middle index safely (prevents overflow)
         int mid = l + (r - l) / 2;
@@ -29,6 +30,7 @@ int main() {
         // if middle element is the target
         if (a[mid] == x) {
             found = true;     // element found
+            index = mid;
             break;
         }
         // if target is greater, ignore left half
@@ -44,7 +46,7 @@ int main() {
     cout << "Search result: ";
     // output result
     if (found)
-        cout << "Found\n";
+        cout << "Found at index "<<index;
     else 
         cout << "Not Found\n";
 

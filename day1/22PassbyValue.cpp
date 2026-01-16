@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void changeValue(int x) {
+void val(int x) {
    x = 20; 
    cout << "Inside function: x = " << x << endl;
 }
@@ -12,7 +12,7 @@ int main() {
    int a = 10;
    cout << "Before function: a = " << a << endl;
 
-   changeValue(a);
+   val(a);
    // Called the function
 
    cout << "After function: a = " << a << endl;

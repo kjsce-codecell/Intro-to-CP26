@@ -25,6 +25,19 @@ int main() {
     }
     cout << "\n";
 
+    
+    cout<<"Enter range to find their sum\n";
+    int l,r;
+    cin >> l >> r;
+    
+    cout<<"Sum :\n";
+
+    if(l==0){
+        cout<<prefixSum[r]<<"\n";
+    }
+    else{
+        cout<<prefixSum[r] - prefixSum[l-1];
+    }
 
     return 0;
 }

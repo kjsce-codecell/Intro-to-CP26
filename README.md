@@ -12,4 +12,12 @@ https://www.canva.com/design/DAG-7eRGjqY/b0vNgt4wAit_ZU3Or7ADqw/edit
 
 It is recommended to **review the slides alongside the code** for better understanding.
 
+A free, text-based website that provides comprehensive, constantly updated tutorials for learning C++ : https://www.learncpp.com/
 
+👨‍💻 Links to practice and give contests on different websites : 
+
+Hackerrank : https://www.hackerrank.com/
+
+Codechef : https://www.codechef.com/
+
+Codeforces : https://codeforces.com/

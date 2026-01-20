@@ -2,3 +2,5 @@
 zzzz
 zzzz.out
 .DS_Store
+.gitignore
+.vscode
